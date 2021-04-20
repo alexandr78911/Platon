@@ -57,6 +57,14 @@ h4 {
 	color: #676767;
 }
 
+h5 {
+	font-family: Playfair Display;
+	font-weight: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #272725;
+}
+
 p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
@@ -193,7 +201,6 @@ header {
 	background: url(../images/background.jpg) no-repeat center;
 	background-size: cover;
 	height: 100vh;
-	padding: 160px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -321,6 +328,30 @@ header {
 	position: relative;
 }
 
+.section-2__nav--item:after, .section-2__nav--item:before {
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	background: #E9BE82;
+	z-index: 15;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	transition: all .4s linear;
+}
+
+.section-2__nav--item:hover:after {
+	width: 126px;
+	height: 5px;
+}
+
+.section-2__nav--item:hover:before {
+	content: "";
+	width: 5px;
+	height: 103px;
+}
+
 .section-2__nav--item img {
 	position: absolute;
 }
@@ -411,9 +442,13 @@ header {
 	margin-top: 70px;
 }
 
+.section-5 h2 {
+	margin-top: 40px;
+}
+
 .accordion {
 	max-width: 770px;
-	margin: 40px auto 70px;
+	margin: 40px auto 30px;
 }
 
 .accordion__item {
@@ -515,7 +550,10 @@ header {
 }
 
 .footer {
-	background: #272725;
+	background-color: #272725;
+	background-image: url(../images/footer.svg);
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -583,4 +621,168 @@ header {
 	font-size: 13px;
 	color: #676767;
 	margin: 17px auto;
+}
+
+/*RESTAURANT PAGE*/
+
+.rest__intro--contact {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	position: absolute;
+    bottom: 18px;
+    width: 1170px;
+}
+
+.rest__intro--contact:before {
+	display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: .08;
+    top: -15px; 
+}
+
+.rest__intro--contact-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rest__intro--contact-item p {
+	font-size: 13px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0;
+}
+
+.section-2--rest {
+	grid-template-columns: 2fr 1fr;
+}
+
+.section-2--rest__graf {
+	display: flex;
+	flex-direction: column;
+}
+
+.section-2--rest__graf h5 {
+	margin-bottom: 30px;
+}
+
+.rest__graf--title {
+	font-weight: 700;
+	font-size: 13px;
+	color: #272725;
+	margin-top: 10px;
+}
+
+.rest__graf--text {
+	list-style-type: none;
+	padding: 0;
+}
+
+.rest__graf--text li {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.rest__graf--text span {
+	width: 50%;
+	font-weight: 400;
+	font-size: 13px;
+	color: #676767;
+}
+
+.rest__graf--text p {
+	margin: 0;
+	width: 50%;
+	font-weight: 400;
+	font-size: 13px;
+	color: #272725;
+}
+
+.rest-section-3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 0;
+	margin: 120px 0 70px 0;
+}
+
+.rest-section-3 img {
+	width: 100%;
+}
+
+.rest-section-4--inner {
+	margin: 43px 0 60px 0;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rest-section-4--item {
+	width: 270px;
+	height: 70px;
+	background: #272725;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+    text-decoration: none;
+}
+
+.rest-section-4--item:hover {
+	background: #535659;
+	cursor: pointer;
+}
+
+.rest-section-4--item:hover p {
+	text-decoration: underline;
+}
+
+.rest-section-4--item-text h4 {
+	color: #ffffff;
+}
+
+.rest-section-4--item-text p {
+	color: #ffffff;
+	margin: 3px 0;
+	font-size: 13px;
+}
+
+.rest-section-4--item svg {
+	fill: #ffffff;
+}
+
+.rest-section-5 {
+	display: grid;
+	grid-template-columns: 1.4fr 2fr;
+	align-items: center;
+}
+
+.rest-section-5--text {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rest-section-5--text .contacts {
+	margin-bottom: 30px;
+}
+
+.rest-section-5--text p {
+	color: #535659;
+}
+
+.rest-section-5--text svg, a {
+	fill: #AD986B;
+}
+
+.rest-section-5--text a {
+	color: #AD986B;
+}
+
+.rest-section-5--photo img {
+	width: 100%;
 }
