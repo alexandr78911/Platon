@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	display: block;
 	font-family: 'Playfair Display', serif;
-	font-size: 36px;
+	font-size: 32px;
 	font-weight: 400;
 	line-height: 1.33;
 	text-transform: uppercase;
@@ -30,8 +30,17 @@ h1 {
 	margin-bottom: 20px;
 }
 
+.h1-1 {
+	font-size: 36px;
+}
+
+.h1-2 {
+	font-size: 29px;
+	text-transform: none;
+}
+
 h2 {
-	font-family: Playfair Display;
+	font-family: Playfair Display, serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
@@ -102,6 +111,7 @@ p {
 }
 
 .btn {
+	margin: auto 0;
 	cursor: pointer;
 	padding: 18px 20px;
 	background: #E9BE82;
@@ -150,6 +160,11 @@ p {
 
 .img-full img {
 	width: 100%;
+}
+
+.citate {
+	border-left: 5px #E9BE82 solid;
+	margin: 40px 0 40px 40px;
 }
 
 /*--------------------HEADER---------------------*/
@@ -248,7 +263,6 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: relative;
 }
 
 .intro p {
@@ -298,7 +312,7 @@ header {
 .reserv .btn {
 	border: none;
 	height: 48px;
-	margin-top: 42px;
+	margin-top: 35px;
 }
 
 .reserv__item input {
@@ -489,12 +503,12 @@ header {
 	color: #272725;
 }
 
-.slider-2 .prev {
+.slider-2 .prev, .apart__section-2__slider .prev {
 	bottom: 0;
 	right: 60px;
 }
 
-.slider-2 .next {
+.slider-2 .next, .apart__section-2__slider .next {
 	bottom: 0;
 	right: 0;
 }
@@ -558,13 +572,13 @@ header {
 	display: none;
 }
 
-.section-5 p, li {
+.section-5 p, .section-5 li {
 	font-size: 13px;
 	line-height: 1.7;
 	margin-bottom: 18px;
 }
 
-.section-5 li {
+.section-5 li, .blogs__text li {
 	list-style-image: url(../images/list.svg);
 	padding-left: 10px;
 }
@@ -745,7 +759,7 @@ header {
 
 .rest__graf--text li {
 	display: flex;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .rest__graf--text span {
@@ -1002,4 +1016,161 @@ header {
 
 .universal-left-right__row:nth-child(2n) .universal-left-right__item:first-of-type{
 	order: -1;
+}
+
+/*APARTAMENTS*/
+.apart__section-2 {
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.apart__section-2__inner {
+	width: 50%;
+	padding-top: 40px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.apart__section-2__info h2 {
+	border-bottom: 1px solid #E9BE82;
+	display: inline-block;
+}
+
+.apart__section-2__info--list {
+	list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 14px;
+}
+
+.apart__section-2__info--list li {
+	display: flex;
+	align-items: center;
+}
+
+.apart__section-2__info--list p {
+	font-size: 12px;
+}
+
+.apart__section-2__info--list span {
+	width: 24px;
+	height: 24px;
+	margin-right: 12px;
+}
+
+.apart__section-2__info--price {
+	display: flex;
+	justify-content: space-between;
+}
+
+.apart__section-2__info--price-item span {
+	font-size: 12px;
+}
+
+.apart__section-2__info--price-item p {
+	font-size: 28px;
+	margin: 0;
+}
+
+.apart__section-2__slider {
+	width: 50%;
+}
+
+.apart__section-2__slider .slide img {
+	width: 100%;
+	max-height: 540px;
+}
+
+.sale h4 {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 28px;
+	color: #EB4857;
+}
+
+.sale p {
+	font-size: 14px;
+	text-decoration-line: line-through;
+}
+
+/*BLOG*/
+.blog {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-top: -70px;
+}
+
+.blog--mini {
+	margin-top: 30px;
+}
+
+.blog__item ul {
+	padding-left: 0
+}
+
+.blog__item li {
+	font-size: 12px;
+	list-style: none;
+	background: url(../images/blog/Union.svg) no-repeat;
+	padding-left: 25px;
+}
+
+.blog__item h6 {
+	font-size: 13px;
+}
+
+.blog__item p {
+	font-size: 12px;
+}
+
+.blog__img:hover {
+	cursor: pointer;
+}
+
+.blog__img:hover ~ h6 {
+	color: #E9BE82;
+}
+/*BLOGS*/
+.blogs__text {
+	margin-top: 55px;
+}
+
+.blogs__text p {
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.blogs__text h3 {
+	color: #272725;
+	text-transform: none;
+	padding: 15px;
+}
+
+.blogs__text h5 {
+	font-size: 22px;
+	text-transform: none;
+}
+
+.blogs__text li {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+
+.blogs__img {
+	margin: 40px 0;
+}
+
+.blogs__img img {
+	width: 100%;
+}
+
+.blog--footer {
+	margin-top: 150px;
 }

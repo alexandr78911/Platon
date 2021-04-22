@@ -15,7 +15,7 @@ $(function() {
 		prevArrow: "<img src='accets/images/slidearrowL.svg' class='prev' alt=''>",
     	nextArrow: "<img src='accets/images/slidearrowR.svg' class='next' alt=''>",
 	})
-	 $('.slider-4').slick({
+	$('.slider-4').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
@@ -32,7 +32,11 @@ $(function() {
 		asNavFor: '.slider-4',
 		focusOnSelect: true,
 		infinite: true
-	});
+	})
+	$('.apart__section-2__slider').slick({
+		prevArrow: "<img src='accets/images/slidearrowL.svg' class='prev' alt=''>",
+    	nextArrow: "<img src='accets/images/slidearrowR.svg' class='next' alt=''>",
+	})
 	$("[data-collapse]").on("click", function(event) {
 		event.preventDefault();
 
