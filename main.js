@@ -11,6 +11,10 @@ $(function() {
 		prevArrow: "<img src='accets/images/slidearrowL.svg' class='prev' alt=''>",
     	nextArrow: "<img src='accets/images/slidearrowR.svg' class='next' alt=''>",
 	})
+	$('.slider-3').slick({
+		prevArrow: "<img src='accets/images/slidearrowL.svg' class='prev' alt=''>",
+    	nextArrow: "<img src='accets/images/slidearrowR.svg' class='next' alt=''>",
+	})
 	$("[data-collapse]").on("click", function(event) {
 		event.preventDefault();
 

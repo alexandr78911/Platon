@@ -65,6 +65,13 @@ h5 {
 	color: #272725;
 }
 
+h6 {
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: #272725;
+}
+
 p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
@@ -286,21 +293,28 @@ header {
 	opacity: 1;
 }
 
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  height: 26px;
-  width: 26px;
-  z-index: 1;
-  cursor: pointer;
+.slider .prev, .slider .next {
+	position: absolute;
+	top: 50%;
+	height: 26px;
+	width: 26px;
+	z-index: 1;
+	cursor: pointer;
 }
 
-.prev {
+.prev, .next {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.slider .prev {
 	left: -30px;
 }
 
-.next {
+.slider .next {
 	right: -30px;
 }
 
@@ -436,6 +450,16 @@ header {
 
 .section-4 h1 {
 	color: #272725;
+}
+
+.slider-2 .prev {
+	bottom: 0;
+	right: 60px;
+}
+
+.slider-2 .next {
+	bottom: 0;
+	right: 0;
 }
 
 .section-5 {
@@ -785,4 +809,58 @@ header {
 
 .rest-section-5--photo img {
 	width: 100%;
+}
+/*GYM*/
+.gym-section-5 {
+	display: flex;
+	align-items: center;
+}
+
+.gym-section-5--text {
+	width:	40%; 
+}
+
+.gym_sect--text {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gym_sect--text p {
+	margin: 0;
+}
+
+.gym_sect--text span {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.gym_sect--text sup {
+	font-size: 19px;
+	bottom: 15px;
+    position: relative;
+}
+
+.gym_sect--text li {
+	width: 50%;
+}
+
+.slider-3 {
+	width: 60%;
+}
+
+.slider-3 .slide img {
+	width: 100%;
+}
+
+.slider-3 .next {
+	right: 0;
+	bottom: 30px;
+}
+
+.slider-3 .prev {
+	right: 60px;
+	bottom: 30px;
 }

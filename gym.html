@@ -9,11 +9,17 @@
 	<link rel="stylesheet" href="accets/slick/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="accets/css/style.css">
 	
-	<title>Platon</title>
+	<title>Platon - Тренажерный зал</title>
 </head>
 <body>
 <!-- Sprite -->
 <svg style="display: none;">
+	<symbol id="time" viewBox="0 0 24 24">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.25C6.61522 2.25 2.25 6.61522 2.25 12C2.25 17.3848 6.61522 21.75 12 21.75C17.3848 21.75 21.75 17.3848 21.75 12C21.75 6.61522 17.3848 2.25 12 2.25ZM3.75 12C3.75 7.44365 7.44365 3.75 12 3.75C16.5563 3.75 20.25 7.44365 20.25 12C20.25 16.5563 16.5563 20.25 12 20.25C7.44365 20.25 3.75 16.5563 3.75 12ZM13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8V12C11 12.3344 11.1671 12.6466 11.4453 12.8321L14.4453 14.8321C14.9048 15.1384 15.5257 15.0142 15.8321 14.5547C16.1384 14.0952 16.0142 13.4743 15.5547 13.1679L13 11.4648V8Z"/>
+	</symbol>
+	<symbol id="book" viewBox="0 0 24 24">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M21 2.25H20.945C18.991 2.24998 17.4326 2.24996 15.9908 2.5121C14.6356 2.7585 13.3992 3.23163 12 4.10704C10.6008 3.23163 9.36438 2.7585 8.00916 2.5121C6.56741 2.24996 5.00897 2.24998 3.05503 2.25H3.05502H3C2.80109 2.25 2.61032 2.32902 2.46967 2.46967C2.32902 2.61032 2.25 2.80109 2.25 3V15C2.25 15.4142 2.58579 15.75 3 15.75C5.02025 15.75 6.4461 15.7525 7.74084 15.9879C9.0029 16.2174 10.1582 16.6735 11.584 17.624C11.8359 17.792 12.1641 17.792 12.416 17.624C13.8418 16.6735 14.9971 16.2174 16.2592 15.9879C17.5539 15.7525 18.9798 15.75 21 15.75C21.4142 15.75 21.75 15.4142 21.75 15V3C21.75 2.58579 21.4142 2.25 21 2.25ZM7.74084 3.9879C8.90291 4.19919 9.97448 4.60267 11.25 5.40729V15.6677C10.1465 15.0668 9.11756 14.7136 8.00916 14.5121C6.74252 14.2818 5.38582 14.2538 3.75 14.2505V3.75061C5.38435 3.75449 6.6124 3.78273 7.74084 3.9879ZM15.9908 14.5121C14.8824 14.7136 13.8535 15.0668 12.75 15.6677V5.40729C14.0255 4.60267 15.0971 4.19919 16.2592 3.9879C17.3876 3.78273 18.6156 3.75448 20.25 3.75061V14.2505C18.6142 14.2538 17.2575 14.2818 15.9908 14.5121ZM3 17.75C2.58579 17.75 2.25 18.0858 2.25 18.5C2.25 18.9142 2.58579 19.25 3 19.25C4.97377 19.25 6.39687 19.3743 7.67766 19.7236C8.95056 20.0707 10.1262 20.6522 11.584 21.624C11.8359 21.792 12.1641 21.792 12.416 21.624C13.8738 20.6522 15.0494 20.0707 16.3223 19.7236C17.6031 19.3743 19.0262 19.25 21 19.25C21.4142 19.25 21.75 18.9142 21.75 18.5C21.75 18.0858 21.4142 17.75 21 17.75C18.9738 17.75 17.3969 17.8757 15.9277 18.2764C14.585 18.6426 13.3686 19.2283 12 20.1041C10.6314 19.2283 9.41499 18.6426 8.07234 18.2764C6.60313 17.8757 5.02623 17.75 3 17.75Z"/>
+	</symbol>
 	<symbol id="arrowL" viewBox="0 0 22 22">
 	<path fill-rule="evenodd" clip-rule="evenodd" d="M20.25 11C20.25 5.89137 16.1086 1.75 11 1.75C5.89137 1.75 1.75 5.89137 1.75 11C1.75 16.1086 5.89137 20.25 11 20.25C16.1086 20.25 20.25 16.1086 20.25 11ZM11 0.25C16.9371 0.25 21.75 5.06294 21.75 11C21.75 16.9371 16.9371 21.75 11 21.75C5.06294 21.75 0.25 16.9371 0.25 11C0.25 5.06294 5.06294 0.25 11 0.25ZM9.46967 7.46967C9.76256 7.17678 10.2374 7.17678 10.5303 7.46967C10.8232 7.76256 10.8232 8.23744 10.5303 8.53033L8.81066 10.25H15C15.4142 10.25 15.75 10.5858 15.75 11C15.75 11.4142 15.4142 11.75 15 11.75H8.81066L10.5303 13.4697C10.8232 13.7626 10.8232 14.2374 10.5303 14.5303C10.2374 14.8232 9.76256 14.8232 9.46967 14.5303L6.46967 11.5303C6.17678 11.2374 6.17678 10.7626 6.46967 10.4697L9.46967 7.46967Z"/>
 	</symbol>
@@ -65,286 +71,156 @@
 	</div>
 </header>
 <!-- Intro -->
-<div class="intro text-center">
+<div class="intro text-center" style="background: url(accets/images/gym/gym-intro.jpg) no-repeat center; background-size: cover;">
 	<div class="container">
 		<h1>
-			Гостиница в Херсоне для отдыха, деловых поездок и развлечений
+			Тренажерный зал
 		</h1>
 		<p>
-			<span class="text-uppercase">Platon Hotel</span>: новая гостиница Херсона с полным обслуживанием и шикарным номерным фондом. Бронируй сейчас люкс по доступной цене!
+			Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона
 		</p>
 		<div class="text-center">
-			<a class="btn" href="#">Забронировать номер</a>
+			<a class="btn" href="#">записаться</a>
+		</div>
+		<div class="rest__intro--contact">
+			<div class="rest__intro--contact-item">
+				<svg class="contacts__icon">
+					<use xlink:href="#map"></use>
+				</svg>
+				<p>65026 Херсон, ул. Столярова 84</p>
+			</div>
+			<div class="rest__intro--contact-item">
+				<svg class="contacts__icon">
+					<use xlink:href="#tel"></use>
+				</svg>
+				<p>+380 67 821 92 51</p>
+			</div>
+			<div class="rest__intro--contact-item">
+				<svg class="contacts__icon">
+					<use xlink:href="#email"></use>
+				</svg>
+				<p>reservation@platon-hotel.ua</p>
+			</div>
+			<div class="rest__intro--contact-item">
+				<svg class="contacts__icon">
+					<use xlink:href="#time"></use>
+				</svg>
+				<p>07:00 – 20:00</p>
+			</div>
 		</div>
 	</div>
 </div>
 <div class="container">
-	<form class="reserv" action="">
-		<div class="reserv__item">
+	<div class="section-2 section-2--rest">
+		<div class="section-2--rest__text">
+			<h2>Platon Fitness</h2>
 			<p>
-	            <label for="date">Приезжаю</label>
-	        </p>
-	        <input type="date" id="date" name="date"/>
-	    </div>
-	    <div class="reserv__item">
-	        <p>
-	            <label for="date">Выезжаю</label>
-	        </p>
-	        <input type="date" id="date" name="date"/>
-	    </div>
-	    <div class="reserv__item reserv__item--short">
-	        <p>
-	            <label for="date">Промокод</label>
-	        </p>
-			<input type="text" id="date" name="date"/>
+				Длительное сидение или пассивный пляжный отдых может отрицательно сказаться на вашем здоровье и самочувствии. Физические нагрузки в таком случае - лучшее лекарство и профилактическое средство. Мы заботимся о здоровье и самочувствии гостей, поэтому постояльцы могут 5 дней в неделю посещать фитнес-центр, оплата которого включена в стоимость номера. <br><br>
+				Наш фитнес-центр - это не классический спортзал в отеле, где всего несколько беговых дорожек и пара захудалых тренажеров на 9 квадратных метрах . Мы обустроили полноценный тренажерный зал, в котором спокойно поместятся все посетители отеля, а заниматься тут можно как для общего поддержания формы, так и на профессиональном уровне.
+			</p>
 		</div>
-	    <input class="btn" type="button" value="Забронировать">
-	</form>
+		<div class="section-2--rest__graf">
+			<h5>Время работы</h5>
+			<div class="rest__graf--title">
+				Время работы
+			</div>
+			<ul class="rest__graf--text">
+				<li>
+					<span>Понедельник</span>
+					<p>07:00 – 20:30</p>
+				</li>
+				<li>
+					<span>Вторник</span>
+					<p>07:00 – 20:30</p>
+				</li>
+				<li>
+					<span>Среда</span>
+					<p>07:00 – 20:30</p>
+				</li>
+				<li>
+					<span>Четверг</span>
+					<p>07:00 – 20:30</p>
+				</li>
+				<li>
+					<span>Пятница</span>
+					<p>07:00 – 20:30</p>
+				</li>
+				<li>
+					<span>Суббота</span>
+					<p>Выходной</p>
+				</li>
+				<li>
+					<span>Воскресенье</span>
+					<p>Выходной</p>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
-<div class="section-1 text-center text-uppercase">
-	<div class="container">
-		<h1>Гостиница в Херсоне с первоклассным сервисом</h1>
-		<p>
-			Platon Hotel - отель бизнес-класса в самом сердце Херсона. Это новая комфортабельная гостиница в Херсоне с европейским уровнем обслуживания. Уютные номера, изысканные блюда интернациональной кухни и приветливый персонал - у нас есть все для комфортабельного отдыха. И даже больше!
-		</p>
-		<div class="slider">
+<div class="container">
+	<div class="gym-section-5">
+		<div class="gym-section-5--text">
+			<ul class="gym_sect--text">
+				<li>
+					<span>250,2<sup>м2</sup></span>
+					<p>Квадратных метров</p>
+				</li>
+				<li>
+					<span>6</span>
+					<p>Дужевых кабинок</p>
+				</li>
+				<li>
+					<span>41</span>
+					<p>Вид тренажеров</p>
+				</li>
+				<li>
+					<span>17</span>
+					<p>LCD-телевизоров</p>
+				</li>
+				<li>
+					<span>89</span>
+					<p>Гантелей и грифов</p>
+				</li>
+				<li>
+					<span>16</span>
+					<p>Беговых дорожек</p>
+				</li>
+			</ul>
+			<div class="btn">Записаться</div>
+		</div>
+		<div class="slider-3">
 			<div class="slide">
-				<img src="accets/images/slider img.jpg" alt="">
+				<img src="accets/images/gym/fitnes-slider.jpg" alt="">
 			</div>
 			<div class="slide">
-				<img src="accets/images/slider img.jpg" alt="">
+				<img src="accets/images/gym/fitnes-slider.jpg" alt="">
 			</div>
 			<div class="slide">
-				<img src="accets/images/slider img.jpg" alt="">
-			</div>
-			<div class="slide">
-				<img src="accets/images/slider img.jpg" alt="">
-			</div>
-			<div class="slide">
-				<img src="accets/images/slider img.jpg" alt="">
+				<img src="accets/images/gym/fitnes-slider.jpg" alt="">
 			</div>
 		</div>
 	</div>
 </div>
 
 <div class="container">
-	<div class="section-2">
-			<div class="section-2__photo">
-				<img src="accets/images/premium-img.jpg" alt="">
-			</div>
-			<div class="section-2__text">
-				<h2>Platon: гостиница в Херсоне в которую хочется возвращаться</h2>
-				<p class="p13">
-					Вне зависимости от категории номера, который вы выберете и цели поездки, мы обеспечим первоклассный отдых и размещение. Гостиница Херсона Platon Hotel имеет множество отзывов и оценок сервиса от довольных клиентов. Забронировать номер и насладиться приятным отдыхом вы можете прямо сейчас, кликнув тут. 
-				</p>
-				<a class="btn" href="#">Забронировать номер</a>
-			</div>
-			<div class="section-2__nav">
-				<div class="section-2__nav--item">
-					<img src="accets/images/aboutus.jpg" alt="">
-					<div class="section-2__nav--item--info">
-						<h3>О нас</h3>
-						<div class="section-2__nav--item--info-more">
-							<p>Перейти к о нас</p>
-							<svg class="item--info__icon">
-								<use xlink:href="#arrowR"></use>
-							</svg>
-						</div>
-					</div>
+	<div class="gym-section-6">
+		<h2>Цены</h2>
+		<p>Подзаголовок для описания цен</p>
+		<div class="gym-section-6__inner">
+			<div class="gym-section-6__item">
+				<div class="gym-section-6__item--name">
+					<img src="accets/images/gym/exercise-1.svg">
+					<h6>Персональная тренировка</h6>
+					<p class="p13">Обучает опытный треннер с 10 летним опытом работы</p>
 				</div>
-				<div class="section-2__nav--item">
-					<img src="accets/images/contacts.jpg" alt="">
-					<div class="section-2__nav--item--info">
-						<h3>Контакты</h3>
-						<div class="section-2__nav--item--info-more">
-							<p>Перейти к контактам</p>
-							<svg class="item--info__icon">
-								<use xlink:href="#arrowR"></use>
-							</svg>
-						</div>
-					</div>
+				<div class="gym-section-6__item--price">
+					<h6>399 грн</h6>
+					<p class="p13">За занятие</p>
 				</div>
-			</div>
-	</div>
-</div>
-
-<div class="section-3 text-center text-f">
-	<div class="container">
-		<h2>Platon Hotel - лучший отель Херсона</h2>
-		<p class="p13 text-f">
-			Platon Hotel - гостиница Херсона, которая постояльцам большое количество обустроенных номеров двух категорий - Standart и Lux. Квалифицированный и опытный персонал сделает все возможное, чтобы ваш отдых прошел на высшем уровне.
-		</p>
-		<a class="btn" href="#">Забронировать номер</a>
-	</div>
-</div>
-
-<div class="container">
-	<div class="section-4 text-center">
-		<h1 class="text-uppercase">Галерея</h1>
-		<p class="p13">
-			Для удобства постояльцев мы предлагаем ранний заезд и поздний выезд, при необходимости вы также можете заказать дополнительное спальное место или завтрак/ужин в номер.
-		</p>
-		<div class="slider-2">
-			<div class="slide">
-				<img src="accets/images/slider2.jpg" alt="">
-			</div>
-			<div class="slide">
-				<img src="accets/images/slider2.jpg" alt="">
-			</div>
-			<div class="slide">
-				<img src="accets/images/slider2.jpg" alt="">
-			</div>
-			<div class="slide">
-				<img src="accets/images/slider2.jpg" alt="">
-			</div>
-			<div class="slide">
-				<img src="accets/images/slider2.jpg" alt="">
 			</div>
 		</div>
 	</div>
 </div>
-
-<div class="container">
-	<div class="section-5">
-		<div class="text-center">
-			<h1 class="text-b">Частые задаваемые вопросы</h1>
-			<p>Подзаголовок для описания блока данного</p>
-		</div>
-		<div class="accordion">
-			<div class="accordion__item" data-collapse="#wedo_1">
-				<div class="accordion__item--trigger">
-					У меня не получилось приехать. Что мне делать?
-				</div>
-				<div class="accordion__item--content" id="wedo_1">
-					Если вы приезжаете ночью и есть свободные места – мы вас поселим сразу же. Если номеров нет – поселение в 14:00, выселение в 12:00. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада позволяет выполнить важные задания по разработке переосмысления
-				</div>
-			</div>
-			<div class="accordion__item" data-collapse="#wedo_2">
-				<div class="accordion__item--trigger">
-					Во сколько поселение в отель?
-				</div>
-				<div class="accordion__item--content" id="wedo_2">
-					Если вы приезжаете ночью и есть свободные места – мы вас поселим сразу же. Если номеров нет – поселение в 14:00, выселение в 12:00. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада позволяет выполнить важные задания по разработке переосмысления
-				</div>
-			</div>
-			<div class="accordion__item" data-collapse="#wedo_3">
-				<div class="accordion__item--trigger">
-					Курс на социально-ориентированный национальный проект развеял последние сомнения
-				</div>
-				<div class="accordion__item--content" id="wedo_3">
-					Если вы приезжаете ночью и есть свободные места – мы вас поселим сразу же. Если номеров нет – поселение в 14:00, выселение в 12:00. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада позволяет выполнить важные задания по разработке переосмысления
-				</div>
-			</div>
-			<div class="accordion__item" data-collapse="#wedo_4">
-				<div class="accordion__item--trigger">
-					Глубокий уровень погружения оправдал надежды граждан
-				</div>
-				<div class="accordion__item--content" id="wedo_4">
-					Если вы приезжаете ночью и есть свободные места – мы вас поселим сразу же. Если номеров нет – поселение в 14:00, выселение в 12:00. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада позволяет выполнить важные задания по разработке переосмысления
-				</div>
-			</div>
-			<div class="accordion__item" data-collapse="#wedo_5">
-				<div class="accordion__item--trigger">
-					Подзаголовок для описания блока данного
-				</div>
-				<div class="accordion__item--content" id="wedo_5">
-					Если вы приезжаете ночью и есть свободные места – мы вас поселим сразу же. Если номеров нет – поселение в 14:00, выселение в 12:00. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада позволяет выполнить важные задания по разработке переосмысления
-				</div>
-			</div>
-		</div>
-		<h2>Комфортная поездка в Херсон: гостиница со всеми удобствами</h2>
-		<p>
-			Комфорт в наше время - это настоящая роскошь, но в Platon Hotel она доступна каждому. Это не просто отель Херсона высокого уровня, а целый комплекс для полноценного отдыха и восстановления. Постояльцам отеля доступны:
-		</p>
-		<ul>
-			<li>Ресторан - стильный интерьер, приятная музыка, уютная атмосфера, а также настоящие кулинарные шедевры - насладиться всем этим вы можете прямо в отеле.</li>
-			<li>Тренажерный зал - движение - это жизнь. Разогреться перед тяжелым трудовым днем, поддерживать форму на отдыхе (а с вкусной едой из нашего ресторана это ой как не просто) или сделать йогу после насыщенного дня можно в нашем фитнес-центре, который оснащен всем необходимым для полноценных занятий спортом.</li>
-			<li>Сауна - отдых с пользой для здоровья. Постояльцам доступна финская сауна, выполнена полностью из натуральных материалов.</li>
-		</ul>
-		<p>
-			Отель Херсона Platon радушно открывает двери своих номеров всем путешественникам. Комплекс подойдет для:
-		</p>
-		<div class="list">
-			<div class="list__item">
-				<img src="accets/images/bed double.svg" alt="">
-				<p>Спокойного семейного отдыха</p>
-			</div>
-			<div class="list__item">
-				<img src="accets/images/Monitor.svg" alt="">
-				<p>Деловых командировок и конференций</p>
-			</div>
-			<div class="list__item">
-				<img src="accets/images/Emotion - Smile.svg" alt="">
-				<p>Развлечений в компании друзей.</p>
-			</div>
-		</div>
-		<p>
-			Помимо этого, мы предоставляем услуги трансфера из/в аэропорта или вокзала в гостиницу Херсон и обратно, в отеле можно заказать услугу “будильник” и вызвать такси. Наши сотрудники любезно ответят на все ваши вопросы о городе и помогут добраться до нужного места.
-		</p>
-	</div>
-</div>
-
-<div class="map">
-	<div class="trapezium"><span>Мы на карте</span></div>	
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2739.402155453987!2d32.61523623317548!3d46.63857194705448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1618690546232!5m2!1sru!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</div>
-
-<footer class="footer">
-	<div class="footer__inner">
-		<div class="footer__item-1">
-			<div class="footer__logo">
-				<img src="accets/images/logo.svg" alt="">
-			</div>
-		</div>
-		<div class="footer__item-2">
-			<div class="text-f">
-				<h2>Platon Hotel & Restaurant</h2>
-				<p class="p13 text-f">
-					Разнообразный и богатый опыт говорит нам, что сложившаяся структура организации способствует повышению качества направлений прогрессивного развития. Современные технологии достигли такого уровня.
-				</p>
-			</div>
-			<div>
-				<h4>Контакты</h4>
-				<div class="contacts">
-					<div class="contacts__item">
-						<svg class="contacts__icon">
-							<use xlink:href="#map"></use>
-						</svg>
-						<p>65026 Херсон, ул. Столярова 84</p>
-					</div>
-					<div class="contacts__item">
-						<svg class="contacts__icon">
-							<use xlink:href="#tel"></use>
-						</svg>
-						<p>Тел. + 380 67 821 92 51</p>
-					</div>
-					<div class="contacts__item">
-						<svg class="contacts__icon">
-							<use xlink:href="#email"></use>
-						</svg>
-						<p>E-mail: <a href="#">reservation@platon-hotel.ua</a></p>
-					</div>
-					<div class="contacts__item">
-						<svg class="contacts__icon">
-							<use xlink:href="#wrench"></use>
-						</svg>
-						<p>Служба поддержки: +380 99 992 92 92</p>
-					</div>
-					<div class="contacts__item">
-						<svg class="contacts__icon">
-							<use xlink:href="#telegram"></use>
-						</svg>
-						<a href="#">@platon-hotel-bot</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="copyright">
-		Все права защищены 2020
-	</div>
-</footer>
-
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="accets/slick/slick.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
